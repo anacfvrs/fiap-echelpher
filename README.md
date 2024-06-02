@@ -2,6 +2,8 @@
 
 # Enterprise Challenge - HelpHer
 
+## ![Logo](./assets/images/logo1.png)
+
 Projeto criado para entrega de trabalho da FIAP, Enterprise Challenge ano 2, semestre 2. HelpHer é uma plataforma criada com o propósito de promover acolhimento, aconselhamento e trocas entre e para mulheres em estado de vulnerabilidade social, reduzindo a desigualdade de gênero (baseado nos Objetivos de Desenvolvimento Sustentável da ONU 5 e 10).
 
 ## Funcionalidades
