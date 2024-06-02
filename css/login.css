@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    background-image: url('../assets/images/icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    color: #e45a84;
+}
+
+.logo span span {
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 80px); /* Ajuste para compensar a altura do header */
+}
+
+.register-container {
+    flex: 0 0 40%;
+    max-width: 40%; /* Define 40% da largura */
+    background-color: #EAEAEA;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.register-header h1 {
+    color: #000;
+    margin-bottom: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.info p {
+    color: #555;
+    margin: 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-form {
+    width: 100%;
+    max-width: 500px; /* Aumentar o tamanho do formulário */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box; /* Garantir que o padding não afete a largura total */
+}
+
+.register-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #e45a84;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box; /* Garantir que o padding não afete a largura total */
+}
+
+.register-button:hover {
+    background-color: #bf4d6b;
+}
+
+.register-footer {
+    margin-top: 1.5rem;
+}
+
+.register-footer a {
+    color: #e45a84;
+    text-decoration: none;
+}
+
+.register-footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    flex: 0 0 60%;
+    max-width: 60%; /* Define 60% da largura */
+    background-color: #e45a84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/images/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,283 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header.main-header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.main-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header.main-header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+header.main-header .logo span {
+    font-size: 1.5rem;
+    color: #e45a84;
+}
+
+header.main-header .logo span span {
+    color: #333;
+}
+
+header.main-header .user-actions {
+    display: flex;
+    align-items: center;
+}
+
+header.main-header .new-post {
+    background-color: #e45a84;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+header.main-header .new-post:hover {
+    background-color: #bf4d6b;
+}
+
+header.main-header .notifications,
+header.main-header .user-profile {
+    margin-left: 1rem;
+}
+
+header.main-header .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 80px); /* Ajuste para compensar a altura do header */
+}
+
+aside.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+aside.sidebar .search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+aside.sidebar .search input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+aside.sidebar .search .search-icon {
+    background: url('../assets/images/search-icon.png') no-repeat center center;
+    background-size: 20px 20px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+aside.sidebar nav.menu,
+aside.sidebar nav.personal-nav {
+    margin-bottom: 2rem;
+}
+
+aside.sidebar nav.menu ul,
+aside.sidebar nav.personal-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside.sidebar nav.menu ul li,
+aside.sidebar nav.personal-nav ul li {
+    margin-bottom: 1rem;
+}
+
+aside.sidebar nav.menu ul li a,
+aside.sidebar nav.personal-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+aside.sidebar nav.menu ul li a:hover,
+aside.sidebar nav.personal-nav ul li a:hover {
+    color: #e45a84;
+}
+
+aside.sidebar .social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside.sidebar .social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+main.content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+main.content .content-main {
+    flex: 3;
+    margin-right: 2rem;
+    max-width: 55%; /* Reduzido ainda mais a largura */
+}
+
+main.content h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.new-post-container {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.new-post-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.new-post-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.new-post-form input,
+.new-post-form select,
+.new-post-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.new-post-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.new-post-form .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-post-form .form-actions button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.new-post-form .form-actions .add-image {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.new-post-form .form-actions .add-image:hover {
+    background-color: #0056b3;
+}
+
+.new-post-form .form-actions .save-draft {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.new-post-form .form-actions .save-draft:hover {
+    background-color: #5a6268;
+}
+
+.new-post-form .form-actions .publish {
+    background-color: #e45a84;
+    color: #fff;
+}
+
+.new-post-form .form-actions .publish:hover {
+    background-color: #bf4d6b;
+}
+
+aside.recommendations {
+    width: 250px; /* Ajustando a largura para ser igual ao da página home */
+}
+
+aside.recommendations .recommended,
+aside.recommendations .featured-links {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+aside.recommendations .recommended h3,
+aside.recommendations .featured-links h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+aside.recommendations .recommended ul,
+aside.recommendations .featured-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside.recommendations .recommended ul li,
+aside.recommendations .featured-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside.recommendations .recommended ul li a,
+aside.recommendations .featured-links ul li a {
+    text-decoration: none;
+    color: #e45a84;
+    font-size: 0.875rem;
+}
+
+aside.recommendations .recommended ul li a:hover,
+aside.recommendations .featured-links ul li a:hover {
+    text-decoration: underline;
+}

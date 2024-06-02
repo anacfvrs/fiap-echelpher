@@ -1,0 +1,296 @@
+/* home.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header.main-header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.main-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header.main-header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+header.main-header .logo span {
+    font-size: 1.5rem;
+    color: #e45a84;
+}
+
+header.main-header .logo span span {
+    color: #333;
+}
+
+header.main-header .user-actions {
+    display: flex;
+    align-items: center;
+}
+
+header.main-header .new-post {
+    background-color: #e45a84;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-decoration: none; /* Adicionado para remover o sublinhado do link */
+    font-size: 1rem; /* Adicionado para garantir tamanho consistente */
+    display: inline-block; /* Adicionado para garantir estilo de botão */
+}
+
+header.main-header .new-post:hover {
+    background-color: #bf4d6b;
+}
+
+header.main-header .notifications,
+header.main-header .user-profile {
+    margin-left: 1rem;
+}
+
+header.main-header .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 80px); /* Ajuste para compensar a altura do header */
+}
+
+aside.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+aside.sidebar .search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+aside.sidebar .search input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+aside.sidebar .search .search-icon {
+    background: url('../assets/images/search-icon.png') no-repeat center center;
+    background-size: 20px 20px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+aside.sidebar nav.menu,
+aside.sidebar nav.personal-nav {
+    margin-bottom: 2rem;
+}
+
+aside.sidebar nav.menu ul,
+aside.sidebar nav.personal-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside.sidebar nav.menu ul li,
+aside.sidebar nav.personal-nav ul li {
+    margin-bottom: 1rem;
+}
+
+aside.sidebar nav.menu ul li a,
+aside.sidebar nav.personal-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+aside.sidebar nav.menu ul li a:hover,
+aside.sidebar nav.personal-nav ul li a:hover {
+    color: #e45a84;
+}
+
+aside.sidebar .social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside.sidebar .social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+main.content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+main.content .posts {
+    flex: 3;
+    margin-right: 2rem;
+}
+
+main.content .post {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main.content .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+main.content .post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+main.content .post-info {
+    flex: 1;
+}
+
+main.content .post-info h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+main.content .post-info span {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+main.content .post-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+main.content .post-content p {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+main.content .post-tags {
+    margin-bottom: 1rem;
+}
+
+main.content .post-tags .tag {
+    display: inline-block;
+    background-color: #e45a84;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+}
+
+main.content .post-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.content .post-footer .post-activity {
+    display: flex;
+    align-items: center;
+}
+
+main.content .post-footer .activity-item {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+main.content .post-footer .activity-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.25rem;
+}
+
+main.content .post-footer .activity-item span {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+aside.recommendations {
+    width: 250px;
+}
+
+aside.recommendations .recommended,
+aside.recommendations .featured-links {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+aside.recommendations .recommended h3,
+aside.recommendations .featured-links h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+aside.recommendations .recommended ul,
+aside.recommendations .featured-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside.recommendations .recommended ul li,
+aside.recommendations .featured-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside.recommendations .recommended ul li a,
+aside.recommendations .featured-links ul li a {
+    text-decoration: none;
+    color: #e45a84;
+    font-size: 0.875rem;
+}
+
+aside.recommendations .recommended ul li a:hover,
+aside.recommendations .featured-links ul li a:hover {
+    text-decoration: underline;
+}

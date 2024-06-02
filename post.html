@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHer - Post</title>
+    <link rel="stylesheet" href="css/post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="assets/images/icon.png" alt="HelpHer Logo">
+            <span>help<span>her</span></span>
+        </div>
+        <div class="user-actions">
+            <a href="new-post.html" class="new-post">Novo Post</a>
+            <div class="notifications">
+                <span class="notification-icon"></span>
+            </div>
+            <div class="user-profile">
+                <img src="assets/images/user-profile.jpeg" alt="User Profile">
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="search">
+                <input type="text" placeholder="Pesquisar">
+                <button class="search-icon"></button>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Posts</a></li>
+                    <li><a href="#">Tags</a></li>
+                </ul>
+            </nav>
+            <nav class="personal-nav">
+                <ul>
+                    <li><a href="#">Meus posts</a></li>
+                    <li><a href="#">Minhas respostas</a></li>
+                    <li><a href="#">Minhas curtidas</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#"><img src="assets/images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/images/github-icon.png" alt="Github"></a>
+            </div>
+        </aside>
+        <main class="content">
+            <div class="post-content">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="assets/images/user-post1.png" alt="User Avatar">
+                        <div class="post-info">
+                            <h2>@Golanginya</h2>
+                            <span>12 November 2020 19:35</span>
+                        </div>
+                    </div>
+                    <div class="post-body">
+                        <h3>Dúvida Jurídica - Situação de Vulnerabilidade</h3>
+                        <p>Mi magna sed nec nisl mattis. Magna cursus tincidunt rhoncus imperdiet fermentum pretium, pharetra nisl. Eusimod.</p>
+                        <p>Posuere arcu arcu consectetur turpis rhoncus tellus. Massa, consectetur massa sit fames nulla eu vehicula ullamcorper. Ante sit mauris elementum sollicitudin arcu sit suspendisse pretium. Nisl egestas fringilla justo bibendum.</p>
+                        <div class="post-tags">
+                            <span class="tag">jurídico</span>
+                            <span class="tag">divórcio</span>
+                            <span class="tag">precisando de ajuda</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="up-button">Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments-section">
+                    <h3>Comentários</h3>
+                    <form class="comment-form">
+                        <textarea placeholder="Digite seu comentário"></textarea>
+                        <div class="comment-actions">
+                            <button type="button" class="cancel-button">Cancelar</button>
+                            <button type="submit" class="comment-button">Comentar</button>
+                        </div>
+                    </form>
+                    <div class="comments">
+                        <!-- Comentário Exemplo -->
+                        <div class="comment">
+                            <div class="comment-header">
+                                <span>@unkind</span>
+                                <span>12 Nov 2020 19:35</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare rutrum amet, a nunc mi lacinia in iaculis.</p>
+                            <div class="comment-actions">
+                                <span>12</span>
+                                <button class="reply-button">Responder</button>
+                            </div>
+                        </div>
+                        <!-- Resposta Exemplo -->
+                        <div class="reply">
+                            <div class="comment-header">
+                                <span>@lazyReplyer</span>
+                                <span>12 Nov 2020 19:40</span>
+                            </div>
+                            <p>@unkind Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare rutrum amet, a nunc mi lacinia in iaculis.</p>
+                            <div class="comment-actions">
+                                <span>5</span>
+                                <button class="reply-button">Responder</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="user-profile-section">
+                <div class="profile-card">
+                    <img src="assets/images/user-profile.jpeg" alt="User Profile">
+                    <h3>@Golanginya</h3>
+                    <div class="user-stats">
+                        <span>125</span>
+                        <span>[8]</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="assets/images/facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="assets/images/instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="assets/images/github-icon.png" alt="Github"></a>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
+

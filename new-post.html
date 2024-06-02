@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHer - Novo Post</title>
+    <link rel="stylesheet" href="css/new-post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="assets/images/icon.png" alt="HelpHer Logo">
+            <span>help<span>her</span></span>
+        </div>
+        <div class="user-actions">
+            <a href="new-post.html" class="new-post">Novo Post</a>
+            <div class="notifications">
+                <span class="notification-icon"></span>
+            </div>
+            <div class="user-profile">
+                <img src="assets/images/user-profile.jpeg" alt="User Profile">
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="search">
+                <input type="text" placeholder="Pesquisar">
+                <button class="search-icon"></button>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Posts</a></li>
+                    <li><a href="#">Tags</a></li>
+                </ul>
+            </nav>
+            <nav class="personal-nav">
+                <ul>
+                    <li><a href="#">Meus posts</a></li>
+                    <li><a href="#">Minhas respostas</a></li>
+                    <li><a href="#">Minhas curtidas</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#"><img src="assets/images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/images/github-icon.png" alt="Github"></a>
+            </div>
+        </aside>
+        <main class="content">
+            <div class="content-main">
+                <h1>Novo Post</h1>
+                <div class="new-post-container">
+                    <form class="new-post-form">
+                        <div class="form-group">
+                            <label for="categories">Escolha as categorias</label>
+                            <select id="categories" name="categories">
+                                <option value="">Selecione</option>
+                                <option value="category1">Categoria 1</option>
+                                <option value="category2">Categoria 2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Título do Post</label>
+                            <input type="text" id="title" name="title" placeholder="Título do Post">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Descrição</label>
+                            <textarea id="description" name="description" placeholder="Descreva o ocorrido e o que você pretende resolver com esse post"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="add-image">Adicionar Imagem</button>
+                            <button type="button" class="save-draft">Salvar Rascunho</button>
+                            <button type="submit" class="publish">Publicar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <aside class="recommendations">
+                <div class="recommended">
+                    <h3>Recomendado</h3>
+                    <ul>
+                        <li><a href="#">Leia as regras da HelpHer antes de começar a usar a plataforma</a></li>
+                        <li><a href="#">O que é a HelpHer?</a></li>
+                    </ul>
+                </div>
+                <div class="featured-links">
+                    <h3>Featured links</h3>
+                    <ul>
+                        <li><a href="#">Boas Práticas HelpHer</a></li>
+                        <li><a href="#">Disque-Denúncia Violência Contra a Mulher</a></li>
+                        <li><a href="#">HelpHer Educação</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
+
+
+
+
