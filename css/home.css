@@ -1,5 +1,3 @@
-/* home.css */
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -294,3 +292,40 @@ aside.recommendations .recommended ul li a:hover,
 aside.recommendations .featured-links ul li a:hover {
     text-decoration: underline;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header.main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    aside.sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 1rem;
+    }
+
+    main.content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    main.content .posts, aside.recommendations {
+        width: 100%;
+    }
+
+    .post, aside.recommendations .recommended, aside.recommendations .featured-links {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+

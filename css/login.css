@@ -158,3 +158,25 @@ header {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .register-container, .logo-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .logo-container {
+        height: 200px; /* Ajuste para visibilidade da imagem em telas menores */
+    }
+}
+

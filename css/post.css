@@ -255,7 +255,7 @@ main.content .post-content {
 
 .comments-section {
     margin-top: 2rem;
-    max-width: 900px; 
+    max-width: 900px; /* Mesma largura do post */
 }
 
 .comments-section h3 {
@@ -270,11 +270,11 @@ main.content .post-content {
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-width: 900px; 
+    max-width: 900px; /* Ajustar para a mesma largura do post */
 }
 
 .comment-form textarea {
-    width: 97.2%;
+    width: 100%;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -432,6 +432,47 @@ main.content .post-content {
     height: 30px;
     margin: 0 0.5rem;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header.main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    aside.sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 1rem;
+    }
+
+    main.content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    main.content .post-content, .comments-section, .comment-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .user-profile-section {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
 
 
 
