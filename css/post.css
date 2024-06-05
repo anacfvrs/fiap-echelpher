@@ -6,7 +6,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden; /* Evita o estouro horizontal */
+    overflow-x: hidden; 
 }
 
 header.main-header {
@@ -79,7 +79,7 @@ header.main-header .user-profile img {
     display: flex;
     flex: 1;
     height: calc(100vh - 80px);
-    margin-top: 80px; /* Compensa a altura do header fixo */
+    margin-top: 80px; 
 }
 
 aside.sidebar {
@@ -89,9 +89,9 @@ aside.sidebar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 80px); /* Compensa a altura do header fixo */
+    height: calc(100vh - 80px); 
     position: fixed;
-    top: 80px; /* Compensa a altura do header fixo */
+    top: 80px; 
     left: 0;
     overflow-y: auto;
 }
@@ -165,12 +165,12 @@ main.content {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin-left: 300px; /* Largura do sidebar + margem */
+    margin-left: 300px; 
 }
 
 main.content .post-content {
     flex: 3;
-    max-width: 900px; /* Ajuste para aumentar a largura do post */
+    max-width: 900px; 
 }
 
 .post {
@@ -178,7 +178,7 @@ main.content .post-content {
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-bottom: 2rem; /* Maior espaçamento entre post e comentários */
+    margin-bottom: 2rem; 
 }
 
 .post-header {
@@ -204,7 +204,7 @@ main.content .post-content {
     color: #333;
 }
 
-.post-info span {
+post-info span {
     font-size: 0.875rem;
     color: #777;
 }
@@ -255,10 +255,10 @@ main.content .post-content {
 
 .comments-section {
     margin-top: 2rem;
-    max-width: 900px; /* Mesma largura do post */
+    max-width: 900px; 
 }
 
-.comments-section h3 {
+comments-section h3 {
     margin-bottom: 1rem;
     font-size: 1.25rem;
     color: #333;
@@ -270,11 +270,11 @@ main.content .post-content {
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-width: 900px; /* Ajustar para a mesma largura do post */
+    max-width: 900px; 
 }
 
 .comment-form textarea {
-    width: 100%;
+    width: 97.2%;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -365,7 +365,7 @@ main.content .post-content {
     margin-left: 2rem;
     padding-left: 1rem;
     border-left: 2px solid #e45a84;
-    background-color: #f9f9f9; /* Cor de fundo diferente para respostas */
+    background-color: #f9f9f9; 
     border-radius: 8px;
     padding: 1rem;
 }
@@ -378,12 +378,12 @@ main.content .post-content {
     width: 250px;
     position: fixed;
     right: 0;
-    top: 80px; /* Compensa a altura do header fixo */
+    top: 80px; 
     padding: 1rem;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    height: calc(100vh - 80px); /* Compensa a altura do header fixo */
+    height: calc(100vh - 80px); 
     overflow-y: auto;
 }
 
@@ -433,7 +433,7 @@ main.content .post-content {
     margin: 0 0.5rem;
 }
 
-/* Estilos responsivos */
+/* media queries */
 @media (max-width: 768px) {
     header.main-header {
         flex-direction: column;
@@ -446,33 +446,29 @@ main.content .post-content {
 
     aside.sidebar {
         width: 100%;
+        padding: 1rem;
+        position: static;
         height: auto;
-        position: relative;
         top: 0;
-        left: 0;
-        margin-bottom: 1rem;
     }
 
     main.content {
-        margin-left: 0;
+        flex-direction: column;
         padding: 1rem;
+        margin-left: 0;
     }
 
-    main.content .post-content, .comments-section, .comment-form {
-        width: 100%;
+    main.content .post-content {
         max-width: 100%;
     }
 
     .user-profile-section {
         width: 100%;
-        position: relative;
-        top: 0;
-        right: 0;
+        position: static;
         height: auto;
-        padding: 1rem;
+        top: 0;
     }
 }
-
 
 
 

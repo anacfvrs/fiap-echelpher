@@ -49,9 +49,9 @@ header.main-header .new-post {
     border-radius: 4px;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    text-decoration: none; /* Adicionado para remover o sublinhado do link */
-    font-size: 1rem; /* Adicionado para garantir tamanho consistente */
-    display: inline-block; /* Adicionado para garantir estilo de botão */
+    text-decoration: none; 
+    font-size: 1rem; 
+    display: inline-block; 
 }
 
 header.main-header .new-post:hover {
@@ -72,7 +72,7 @@ header.main-header .user-profile img {
 .main-container {
     display: flex;
     flex: 1;
-    height: calc(100vh - 80px); /* Ajuste para compensar a altura do header */
+    height: calc(100vh - 80px); 
 }
 
 aside.sidebar {
@@ -293,10 +293,10 @@ aside.recommendations .featured-links ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilos responsivos */
+/* media queries */
 @media (max-width: 768px) {
     header.main-header {
-        flex-direction: column;
+        flex-direction:row;
         align-items: flex-start;
     }
 
@@ -306,25 +306,22 @@ aside.recommendations .featured-links ul li a:hover {
 
     aside.sidebar {
         width: 100%;
-        height: auto;
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 1rem;
-    }
-
-    main.content {
-        margin-left: 0;
         padding: 1rem;
     }
 
-    main.content .posts, aside.recommendations {
-        width: 100%;
+    main.content {
+        flex-direction: column;
+        padding: 1rem;
+        margin-left: 0;
     }
 
-    .post, aside.recommendations .recommended, aside.recommendations .featured-links {
+    main.content .posts {
+        flex: 1;
+        margin-right: 0;
+    }
+
+    aside.recommendations {
         width: 100%;
-        margin-bottom: 1rem;
     }
 }
 

@@ -69,7 +69,7 @@ header.main-header .user-profile img {
 .main-container {
     display: flex;
     flex: 1;
-    height: calc(100vh - 80px); /* Ajuste para compensar a altura do header */
+    height: calc(100vh - 80px); 
 }
 
 aside.sidebar {
@@ -155,7 +155,7 @@ main.content {
 main.content .content-main {
     flex: 3;
     margin-right: 2rem;
-    max-width: 55%; /* Reduzido ainda mais a largura */
+    max-width: 55%; 
 }
 
 main.content h1 {
@@ -239,7 +239,7 @@ main.content h1 {
 }
 
 aside.recommendations {
-    width: 250px; /* Ajustando a largura para ser igual ao da página home */
+    width: 250px; 
 }
 
 aside.recommendations .recommended,
@@ -282,7 +282,7 @@ aside.recommendations .featured-links ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilos responsivos */
+/* media queries */
 @media (max-width: 768px) {
     header.main-header {
         flex-direction: column;
@@ -295,26 +295,20 @@ aside.recommendations .featured-links ul li a:hover {
 
     aside.sidebar {
         width: 100%;
-        height: auto;
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 1rem;
-    }
-
-    main.content {
-        margin-left: 0;
         padding: 1rem;
     }
 
-    main.content .content-main, aside.recommendations {
-        width: 100%;
+    main.content {
+        flex-direction: column;
+        padding: 1rem;
     }
 
-    .new-post-container, aside.recommendations .recommended, aside.recommendations .featured-links {
+    main.content .content-main {
+        max-width: 100%;
+    }
+
+    aside.recommendations {
         width: 100%;
-        margin-bottom: 1rem;
     }
 }
-
 

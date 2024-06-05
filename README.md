@@ -17,5 +17,6 @@ Projeto criado para entrega de trabalho da FIAP, Enterprise Challenge ano 2, sem
 
 - HTML5
 - CSS3
-- JavaScript (para futuras implementações de interatividade)
+- JavaScript 
+- API ViaCEP
 

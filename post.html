@@ -6,6 +6,7 @@
     <title>HelpHer - Post</title>
     <link rel="stylesheet" href="css/post.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="main-header">
@@ -74,45 +75,21 @@
                 </div>
                 <div class="comments-section">
                     <h3>Comentários</h3>
-                    <form class="comment-form">
-                        <textarea placeholder="Digite seu comentário"></textarea>
+                    <form class="comment-form" id="comment-form">
+                        <textarea placeholder="Digite seu comentário" id="comment-text"></textarea>
                         <div class="comment-actions">
                             <button type="button" class="cancel-button">Cancelar</button>
                             <button type="submit" class="comment-button">Comentar</button>
                         </div>
                     </form>
-                    <div class="comments">
-                        <!-- Comentário Exemplo -->
-                        <div class="comment">
-                            <div class="comment-header">
-                                <span>@unkind</span>
-                                <span>12 Nov 2020 19:35</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare rutrum amet, a nunc mi lacinia in iaculis.</p>
-                            <div class="comment-actions">
-                                <span>12</span>
-                                <button class="reply-button">Responder</button>
-                            </div>
-                        </div>
-                        <!-- Resposta Exemplo -->
-                        <div class="reply">
-                            <div class="comment-header">
-                                <span>@lazyReplyer</span>
-                                <span>12 Nov 2020 19:40</span>
-                            </div>
-                            <p>@unkind Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare rutrum amet, a nunc mi lacinia in iaculis.</p>
-                            <div class="comment-actions">
-                                <span>5</span>
-                                <button class="reply-button">Responder</button>
-                            </div>
-                        </div>
+                    <div class="comments" id="comments">
                     </div>
                 </div>
             </div>
             <aside class="user-profile-section">
                 <div class="profile-card">
                     <img src="assets/images/user-profile.jpeg" alt="User Profile">
-                    <h3>@Golanginya</h3>
+                    <h3>@Giovana</h3>
                     <div class="user-stats">
                         <span>125</span>
                         <span>[8]</span>
@@ -126,6 +103,10 @@
             </aside>
         </main>
     </div>
+    <script src="js/post.js"></script>
 </body>
 </html>
+
+
+
 

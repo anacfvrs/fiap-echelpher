@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    background-image: url('../assets/images/icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    color: #e45a84;
+}
+
+.logo span span {
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.complete-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.complete-header h1 {
+    color: #e45a84;
+    margin-bottom: 1rem;
+}
+
+.complete-form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.complete-form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.complete-form .form-group input,
+.complete-form .form-group select {
+    width: 90%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.complete-form .form-group input[type="file"] {
+    padding: 0;
+}
+
+.complete-form .form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.complete-form .form-group.profissional-details {
+    display: none;
+}
+
+.complete-button {
+    width: 90%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #e45a84;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.complete-button:hover {
+    background-color: #bf4d6b;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .complete-container {
+        width: 100%;
+        max-width: none; 
+    }
+}
+
+

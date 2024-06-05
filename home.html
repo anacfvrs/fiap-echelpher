@@ -6,6 +6,7 @@
     <title>HelpHer - Home</title>
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="main-header">
@@ -19,27 +20,27 @@
                 <span class="notification-icon"></span>
             </div>
             <div class="user-profile">
-                <img src="assets/images/user-profile.jpeg" alt="User Profile">
+                <img src="assets/images/user-profile.jpeg" alt="User Profile" id="user-profile-img">
             </div>
         </div>
     </header>
     <div class="main-container">
         <aside class="sidebar">
             <div class="search">
-                <input type="text" placeholder="Pesquisar">
+                <input type="text" placeholder="Pesquisar" id="search">
                 <button class="search-icon"></button>
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="home.html">Posts</a></li>
-                    <li><a href="#">Tags</a></li>
+                    <li><a href="#" id="home-link">Posts</a></li>
+                    <li><a href="#" id="tags-link">Tags</a></li>
                 </ul>
             </nav>
             <nav class="personal-nav">
                 <ul>
-                    <li><a href="#">Meus posts</a></li>
-                    <li><a href="#">Minhas respostas</a></li>
-                    <li><a href="#">Minhas curtidas</a></li>
+                    <li><a href="#" id="my-posts-link">Meus posts</a></li>
+                    <li><a href="#" id="my-replies-link">Minhas respostas</a></li>
+                    <li><a href="#" id="my-likes-link">Minhas curtidas</a></li>
                 </ul>
             </nav>
             <div class="social-links">
@@ -49,13 +50,48 @@
             </div>
         </aside>
         <main class="content">
-            <div class="posts">
-                <!-- Exemplo de um post -->
-                <div class="post">
+            <div class="posts" id="posts">
+                <!-- exemplo de um post -->
+                <div class="post" id="first-post">
                     <div class="post-header">
                         <img src="assets/images/user-post1.png" alt="User Avatar">
                         <div class="post-info">
                             <h2>Golanginya</h2>
+                            <span>8 min atrás</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Dúvida Jurídica - Situação de Vulnerabilidade</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat aliquet maecenas ut sit nulla.</p>
+                        <div class="post-tags">
+                            <span class="tag">jurídico</span>
+                            <span class="tag">divórcio</span>
+                            <span class="tag">precisando de ajuda</span>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-activity">
+                            <div class="activity-item">
+                                <img src="assets/images/eye.png" alt="Views">
+                                <span>16</span>
+                            </div>
+                            <div class="activity-item">
+                                <img src="assets/images/message-square.png" alt="Comments">
+                                <span>19</span>
+                            </div>
+                            <div class="activity-item">
+                                <img src="assets/images/arrow-up.png" alt="Ups">
+                                <span>14</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- exemplo de um post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="assets/images/user-post2.png" alt="User Avatar">
+                        <div class="post-info">
+                            <h2>Maria Silva <i class="fas fa-check-circle verified-icon"></i></h2>
                             <span>5 min atrás</span>
                         </div>
                     </div>
@@ -85,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Segundo exemplo de post -->
+                <!-- exemplo de post -->
                 <div class="post">
                     <div class="post-header">
                         <img src="assets/images/user-post.png" alt="User Avatar">
@@ -119,7 +155,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Adicionar mais posts aqui -->
             </div>
             <aside class="recommendations">
                 <div class="recommended">
@@ -140,7 +175,12 @@
             </aside>
         </main>
     </div>
+    <script src="js/home.js"></script>
 </body>
 </html>
+
+
+
+
 
 

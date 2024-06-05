@@ -45,12 +45,13 @@ header {
 .main-container {
     display: flex;
     flex: 1;
-    height: calc(100vh - 80px); /* Ajuste para compensar a altura do header */
+    height: calc(100vh - 80px); 
+    flex-direction: row;
 }
 
 .register-container {
     flex: 0 0 40%;
-    max-width: 40%; /* Define 40% da largura */
+    max-width: 40%; 
     background-color: #EAEAEA;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -92,7 +93,7 @@ header {
 
 .register-form {
     width: 100%;
-    max-width: 500px; /* Aumentar o tamanho do formulário */
+    max-width: 500px;
 }
 
 .form-group {
@@ -114,7 +115,7 @@ header {
     border-radius: 4px;
     font-size: 1rem;
     color: #333;
-    box-sizing: border-box; /* Garantir que o padding não afete a largura total */
+    box-sizing: border-box; 
 }
 
 .register-button {
@@ -126,7 +127,7 @@ header {
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-    box-sizing: border-box; /* Garantir que o padding não afete a largura total */
+    box-sizing: border-box; 
 }
 
 .register-button:hover {
@@ -148,7 +149,7 @@ header {
 
 .logo-container {
     flex: 0 0 60%;
-    max-width: 60%; /* Define 60% da largura */
+    max-width: 60%;
     background-color: #e45a84;
     display: flex;
     justify-content: center;
@@ -159,25 +160,23 @@ header {
     background-position: center;
 }
 
-/* Estilos responsivos */
+/* media queries */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .main-container {
         flex-direction: column;
     }
-
-    .register-container, .logo-container {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
+    
+    .register-container,
     .logo-container {
-        height: 200px; /* Ajuste para visibilidade da imagem em telas menores */
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+    
+    .register-container {
+        box-shadow: none;
     }
 }
+
 
 
